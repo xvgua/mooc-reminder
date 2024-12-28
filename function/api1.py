@@ -13,7 +13,7 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 
 
-def setting():
+def setting(driver):
     options = Options()
     options.add_argument('--headless')  # 无头模式
     options.add_argument('--no-sandbox')  # 为了兼容服务器环境

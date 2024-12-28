@@ -40,6 +40,7 @@ def login_to_mooc(driver, phone, password):
 # 跳转到我的课程页面
 def go_to_my_courses(driver):
     # 接受隐私政策
+   
     privacy_button = WebDriverWait(driver, 30).until(
         EC.presence_of_element_located((By.XPATH, '//*[@id="privacy-ok"]'))
     )
